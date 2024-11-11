@@ -1,0 +1,26 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: GelatoPineCore
+    network: mainnet
+    source:
+      address: "0x36049D479A97CdE1fC6E2a5D2caE30B666Ebf92B"
+      abi: GelatoPineCore
+      startBlock: 12818753
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - DepositToken
+      abis:
+        - name: GelatoPineCore
+          file: ./abis/GelatoPineCore.json
+      eventHandlers:
+        - event: DepositToken(indexed bytes32,indexed address,uint256,address,address,indexed address,address,bytes,bytes32)
+          handler: handleDepositToken
+      file: ./src/gelato-pine-core.ts

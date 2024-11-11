@@ -1,0 +1,15 @@
+type DepositToken @entity(immutable: true) {
+  id: Bytes!
+  key: Bytes! # bytes32
+  caller: Bytes! # address
+  amount: BigInt! # uint256
+  module: Bytes! # address
+  inputToken: Bytes! # address
+  owner: Bytes! # address
+  witness: Bytes! # address
+  data: Bytes! # bytes
+  secret: Bytes! # bytes32
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
