@@ -30,5 +30,8 @@ coverage.json
 typechain
 typechain-types
 
+# Subgraph.yaml
+
 # Hardhat files
 cache
+subgraph.yaml
