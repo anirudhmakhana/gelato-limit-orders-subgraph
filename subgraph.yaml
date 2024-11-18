@@ -8,11 +8,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: ERC20OrderRouter
-    network: mainnet
+    network: fantom
     source:
       abi: ERC20OrderRouter
-      startBlock: 12818753
-      address: "0x5fb00386558ccc219e51b69d8e963ef20b0c267a"
+      startBlock: 11977539
+      address: "0x97C1af451407e266fD57168e61D4B5af31894244"
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -31,11 +31,11 @@ dataSources:
 
   - kind: ethereum
     name: GelatoPineCore
-    network: mainnet
+    network: fantom
     source:
-      address: "0x36049D479A97CdE1fC6E2a5D2caE30B666Ebf92B"
+      address: "0x05Ad1094Eb6Cde564d732196F6754Ee464896031"
       abi: GelatoPineCore
-      startBlock: 12818753
+      startBlock: 11977539
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7

@@ -52,4 +52,4 @@ dataSources:
           handler: handleOrderExecuted
         - event: OrderCancelled(indexed bytes32,address,address,address,bytes,uint256)
           handler: handleOrderCancelled
-      file: ./src/gelato-pine-core.ts
+      file: ./src/handlers/Order.ts
